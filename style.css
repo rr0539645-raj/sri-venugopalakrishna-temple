@@ -1,0 +1,632 @@
+
+/* ==========================================
+   SRI VENUGOPALAKRISHNA TEMPLE WEBSITE
+   Royal Maroon & Gold Theme
+========================================== */
+
+/* BASIC SETTINGS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Noto Sans Tamil', sans-serif;
+    background: #f8f5e9;
+    color: #333;
+    line-height: 1.8;
+}
+
+/* HEADER */
+
+header {
+    background: #8B0000;
+    color: white;
+    padding: 18px 6%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    text-align: left;
+    border-bottom: 4px solid #d4af37;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+header img {
+    width: 85px;
+    height: 85px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #d4af37;
+}
+
+header h1 {
+    color: #ffd700;
+    font-size: 27px;
+    margin-bottom: 5px;
+}
+
+header p {
+    color: #fff;
+    font-size: 14px;
+}
+
+/* NAVIGATION */
+
+nav {
+    background: #5c0000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    padding: 14px;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #ffd700;
+}
+
+/* HERO SECTION */
+
+.hero {
+    min-height: 550px;
+
+    background:
+        linear-gradient(
+            rgba(0,0,0,0.55),
+            rgba(0,0,0,0.55)
+        ),
+        url("images/temple.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    padding: 40px 20px;
+    color: white;
+}
+
+.hero h2 {
+    color: #ffd700;
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: white;
+}
+
+/* COMMON BUTTON */
+
+.btn {
+    display: inline-block;
+    background: #d4af37;
+    color: #5c0000;
+    padding: 13px 28px;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: white;
+    color: #8B0000;
+    transform: translateY(-3px);
+}
+
+/* COMMON SECTION */
+
+section {
+    padding: 70px 8%;
+}
+
+.section-title {
+    text-align: center;
+    color: #8B0000;
+    font-size: 30px;
+    margin-bottom: 35px;
+}
+
+.section-title::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 3px;
+    background: #d4af37;
+    margin: 12px auto;
+}
+
+/* ABOUT SECTION */
+
+.about {
+    text-align: center;
+    background: #fff;
+}
+
+.about p {
+    max-width: 1000px;
+    margin: auto;
+    font-size: 17px;
+    line-height: 2.2;
+}
+
+/* SERVICES SECTION */
+
+
+/* SERVICES SECTION */
+
+.services {
+    padding: 30px 8% 70px;
+    text-align: center;
+    background: #f8f5e9;
+}
+
+.services h2 {
+    color: #8b0000;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.section-line {
+    width: 80px;
+    height: 3px;
+    background: #d4af37;
+    margin: 0 auto 35px;
+}
+
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.service-card {
+    background: white;
+    padding: 30px 20px;
+    border-radius: 15px;
+    border-bottom: 5px solid #d4af37;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.10);
+    transition: 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+}
+
+.service-icon {
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+
+.service-card h3 {
+    color: #8b0000;
+    font-size: 23px;
+}
+
+.service-card p {
+    color: #444;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+.pooja-timings {
+    background: white;
+    max-width: 500px;
+    margin: 35px auto 25px;
+    padding: 20px;
+    border-radius: 15px;
+    border: 2px solid #d4af37;
+}
+
+.pooja-timings h3 {
+    color: #8b0000;
+}
+
+.pooja-timings p {
+    font-size: 18px;
+    color: #444;
+}
+
+.whatsapp-booking {
+    display: inline-block;
+    background: #d4af37;
+    color: #650000;
+    padding: 15px 30px;
+    border-radius: 40px;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+    margin-top: 5px;
+    transition: 0.3s;
+}
+
+.whatsapp-booking:hover {
+    background: #8b0000;
+    color: white;
+}
+
+@media (max-width: 900px) {
+    .services-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 550px) {
+    .services-container {
+        grid-template-columns: 1fr;
+    }
+
+    .services h2 {
+        font-size: 25px;
+    }
+}
+
+
+/* GALLERY SECTION */
+
+.gallery {
+    background: white;
+    text-align: center;
+}
+
+.gallery > p {
+    margin-bottom: 30px;
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(220px, 1fr)
+    );
+    gap: 22px;
+    margin-top: 25px;
+}
+
+.gallery-container img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 3px solid #d4af37;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.12);
+}
+
+.gallery-container img:hover {
+    transform: scale(1.04);
+}
+
+/* IMAGE ZOOM POPUP */
+
+.image-popup {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.95);
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.image-popup img {
+    max-width: 80%;
+    max-height: 85vh;
+    object-fit: contain;
+    border-radius: 10px;
+    border: 2px solid #d4af37;
+}
+
+.close-popup {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: white;
+    font-size: 45px;
+    cursor: pointer;
+}
+
+.prev-btn,
+.next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #d4af37;
+    color: #5c0000;
+    border: none;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.prev-btn {
+    left: 25px;
+}
+
+.next-btn {
+    right: 25px;
+}
+
+.prev-btn:hover,
+.next-btn:hover {
+    background: white;
+}
+
+/* CONTACT SECTION */
+
+.contact {
+    background: #f8f5e9;
+    text-align: center;
+}
+
+.contact p {
+    font-size: 17px;
+    line-height: 2.5;
+}
+
+.contact strong {
+    color: #8B0000;
+}
+
+.contact h3 {
+    color: #8B0000;
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+
+/* GOOGLE MAP */
+
+.map {
+    width: 100%;
+    max-width: 1000px;
+    height: 380px;
+    border: 4px solid #d4af37;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+
+/* FOOTER */
+
+footer {
+    background: #5c0000;
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+    border-top: 4px solid #d4af37;
+}
+
+footer h3 {
+    color: #ffd700;
+    font-size: 23px;
+    margin-bottom: 10px;
+}
+
+footer p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+/* WHATSAPP FLOATING BUTTON */
+
+.whatsapp {
+    position: fixed;
+    right: 22px;
+    bottom: 22px;
+    background: #25D366;
+    color: white;
+    padding: 13px 23px;
+    border-radius: 40px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.25);
+    z-index: 2000;
+    transition: 0.3s;
+}
+
+.whatsapp:hover {
+    background: #128C7E;
+    transform: scale(1.06);
+}
+
+/* RESPONSIVE DESIGN - TABLET */
+
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header h1 {
+        font-size: 22px;
+    }
+
+    nav {
+        gap: 15px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    .hero {
+        min-height: 420px;
+    }
+
+    .hero h2 {
+        font-size: 27px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    section {
+        padding: 50px 5%;
+    }
+
+    .section-title {
+        font-size: 25px;
+    }
+
+    .gallery-container img {
+        height: 210px;
+    }
+
+    .map {
+        height: 300px;
+    }
+}
+
+/* RESPONSIVE DESIGN - MOBILE */
+
+@media (max-width: 480px) {
+
+    header img {
+        width: 70px;
+        height: 70px;
+    }
+
+    header h1 {
+        font-size: 19px;
+    }
+
+    header p {
+        font-size: 12px;
+    }
+
+    nav {
+        gap: 10px;
+        padding: 12px 5px;
+    }
+
+    nav a {
+        font-size: 12px;
+    }
+
+    .hero {
+        min-height: 350px;
+    }
+
+    .hero h2 {
+        font-size: 23px;
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
+
+    .service-container {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+    }
+
+    .gallery-container img {
+        height: 160px;
+    }
+
+    .image-popup img {
+        max-width: 95%;
+    }
+
+    .prev-btn {
+        left: 5px;
+    }
+
+    .next-btn {
+        right: 5px;
+    }
+
+    .whatsapp {
+        right: 12px;
+        bottom: 12px;
+        font-size: 13px;
+        padding: 10px 17px;
+    }
+
+    .map {
+        height: 250px;
+    }
+
+    footer h3 {
+        font-size: 19px;
+    }
+}
+
+/* TEMPLE HISTORY DESIGN */
+
+.history {
+    padding: 35px 8% 50px;
+    text-align: center;
+    background: #ffffff;
+}
+
+.history h2 {
+    color: #8b0000;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.history-content {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.history-content p {
+    color: #444;
+    font-size: 18px;
+    line-height: 2;
+    text-align: justify;
+    margin-bottom: 18px;
+}
+
+@media (max-width: 600px) {
+    .history {
+        padding: 25px 5%;
+    }
+
+    .history h2 {
+        font-size: 25px;
+    }
+
+    .history-content p {
+        font-size: 16px;
+        line-height: 1.9;
+    }
+}
